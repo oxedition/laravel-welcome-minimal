@@ -3,7 +3,7 @@
     "description": "Minal welcome page for laravel",
     "keywords": [
         "oxedition",
-        "laravel_welcome_minimal"
+        "laravel-welcome-minimal"
     ],
     "homepage": "https://github.com/oxedition/laravel-welcome-minimal",
     "license": "MIT",

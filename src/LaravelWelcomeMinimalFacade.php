@@ -16,6 +16,6 @@ class LaravelWelcomeMinimalFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'laravel_welcome_minimal';
+        return 'laravel-welcome-minimal';
     }
 }
