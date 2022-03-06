@@ -21,7 +21,7 @@
     <body class="antialiased">
        <h1>COUCOU</h1>
        <x-ox.button>coucou</x-ox.button>
-       <x-ox.footer.minimal_more>Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved</x-ox-footer.minimal>
+       <x-ox.footer.minimal-more>Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved</x-ox-footer.minimal-more>
        <x-ox.footer.minimal>Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved</x-ox-footer.minimal>
     </body>
 </html>
