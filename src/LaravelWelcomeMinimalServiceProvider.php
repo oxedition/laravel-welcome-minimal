@@ -31,7 +31,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
             ], 'laravel-welcome-minimal-views');
 
             $this->publishes([
-                __DIR__.'/../resources/views/components/' => resource_path('views/components/ox/'),
+                __DIR__.'/../resources/components/' => resource_path('views/components/ox/'),
             ], 'laravel-welcome-minimal-components');            
 
             // Publishing assets.
