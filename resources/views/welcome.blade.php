@@ -24,5 +24,6 @@
     </head>
     <body class="antialiased">
        <h1>COUCOU</h1>
+       <x-ox.button>coucou</x-ox.button>
     </body>
 </html>

@@ -17,7 +17,7 @@ composer require oxedition/laravel-welcome-minimal
 ## Usage
 
 ```php
-// Usage description here
+php artisan vendor:publish --tag=laravel-welcome-minimal-views --force
 ```
 
 ### Testing
