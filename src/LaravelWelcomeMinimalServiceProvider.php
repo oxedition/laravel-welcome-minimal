@@ -15,7 +15,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravel-welcome-minimal');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-welcome-minimal');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-welcome-minimal');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
@@ -26,7 +26,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 
             // Publishing the views.
             $this->publishes([
-                __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
+                __DIR__.'/../resources/views/' => resource_path('views/'),
             ], 'laravel-welcome-minimal-views');
 
             // Publishing assets.
