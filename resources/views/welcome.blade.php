@@ -21,6 +21,7 @@
                 font-family: 'Darker Grotesque', sans-serif;
             }
         </style>
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     </head>
     <body class="antialiased">
        <h1>COUCOU</h1>
