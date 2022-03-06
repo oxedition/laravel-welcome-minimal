@@ -26,7 +26,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 
             // Publishing the views.
             $this->publishes([
-                __DIR__.'/../resources/views' => resource_path('views'),
+                __DIR__.'/../resources/views/welcome.blade.php' => resource_path('views/welcome.blade.php'),
             ], 'laravel-welcome-minimal-views');
 
             // Publishing assets.
