@@ -1,11 +1,11 @@
 {
-    "name": "oxedition/laravel_welcome_minimal",
+    "name": "oxedition/laravel-welcome-minimal",
     "description": "Minal welcome page for laravel",
     "keywords": [
         "oxedition",
         "laravel_welcome_minimal"
     ],
-    "homepage": "https://github.com/oxedition/laravel_welcome_minimal",
+    "homepage": "https://github.com/oxedition/laravel-welcome-minimal",
     "license": "MIT",
     "type": "library",
     "authors": [
