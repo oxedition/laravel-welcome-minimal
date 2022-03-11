@@ -12,10 +12,12 @@ composer require oxedition/laravel-welcome-minimal
 
 ## Usage
 
-This package required laravel Jetstream.
+This package required laravel Jetstream Livewire or Laravel Breeze
 
 ```php
 php artisan minimal:install
+npm install
+npm run watch
 ```
 
 ### Changelog
