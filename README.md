@@ -1,6 +1,6 @@
 # Laravel welcome minimal template
 
-Laravel welcome minila is a replacement template for Laravel welcome page.
+Laravel welcome minimal is a replacement template for Laravel welcome page.
 
 ## Installation
 
@@ -11,6 +11,8 @@ composer require oxedition/laravel-welcome-minimal
 ```
 
 ## Usage
+
+This package required laravel Jetstream.
 
 ```php
 php artisan minimal:install

@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+        
         <title>Laravel welcome minimal</title>
 
         <!-- Fonts -->
@@ -32,12 +33,20 @@
                 <li class="border-r border-r-black pr-6">
                     <a href="/">Documentation</a>
                 </li>
-                <li class="ml-6">
-                    <a href="">Sign In</a>
-                </li>
-                <li class="ml-6">
-                    <a href="" class="px-4 py-2 border border-black hover:bg-black hover:text-green-100">Create account</a>
-                </li>
+                @if (Route::has('login'))
+                    @auth
+                        <li class="ml-6">
+                            <a href="{{ url('/dashboard') }}">Dashboard</a>    
+                        </li>
+                    @else
+                        <li class="ml-6">
+                            <a href="{{ route('login') }}">Sign In</a>
+                        </li>
+                        <li class="ml-6">
+                            <a href="{{ route('register') }}" class="px-4 py-2 border border-black hover:bg-black hover:text-green-100">Create account</a>
+                        </li>                    
+                    @endauth
+                @endif
             </ul>
            </nav>
        </header>
