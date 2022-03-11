@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        
+
         <title>Laravel welcome minimal</title>
 
         <!-- Fonts -->
@@ -43,7 +43,9 @@
                             <a href="{{ route('login') }}">Sign In</a>
                         </li>
                         <li class="ml-6">
-                            <a href="{{ route('register') }}" class="px-4 py-2 border border-black hover:bg-black hover:text-green-100">Create account</a>
+                            <x-ox.button.button-primary class="my-6 uppercase">
+                               Create account
+                            </x-ox.button.button-primary>                               
                         </li>                    
                     @endauth
                 @endif
