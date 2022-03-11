@@ -3,6 +3,7 @@
 namespace Oxedition\LaravelWelcomeMinimal;
 
 use Illuminate\Support\ServiceProvider;
+use Oxedition\LaravelWelcomeMinimal\Console\InstallCommand;
 
 class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 {
@@ -32,20 +33,22 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 
             $this->publishes([
                 __DIR__.'/../resources/components/' => resource_path('views/components/ox/'),
-            ], 'laravel-welcome-minimal-components');            
+            ], 'laravel-welcome-minimal-components'); 
+            
+            $this->publishes([
+                __DIR__.'/../resources/public/' => public_path('images/'),
+            ], 'laravel-welcome-minimal-images');             
 
             // Publishing assets.
-            /*$this->publishes([
-                __DIR__.'/../resources/assets' => public_path('vendor/laravel-welcome-minimal'),
-            ], 'assets');*/
+            $this->publishes([
+                 __DIR__.'/../resources/css' => resource_path('css/'),
+            ], 'laravel-welcome-minimal-css');
 
-            // Publishing the translation files.
-            /*$this->publishes([
-                __DIR__.'/../resources/lang' => resource_path('lang/vendor/laravel-welcome-minimal'),
-            ], 'lang');*/
 
             // Registering package commands.
-            // $this->commands([]);
+            $this->commands([
+                InstallCommand::class,
+            ]);
         }
     }
 
