@@ -43,7 +43,7 @@ class InstallCommand extends Command
         $this->info("Install css!");
 
         $this->replaceInFile("require('tailwindcss'),", "require('tailwindcss'), require('autoprefixer'),", base_path('webpack.mix.js'));
-        $this->info("Add autoprefixer to !");
+        $this->info("Add autoprefixer to webpack.mix.js!");
 
     }
 

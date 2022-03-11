@@ -1,6 +1,6 @@
 # Laravel welcome minimal template
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Laravel welcome minila is a replacement template for Laravel welcome page.
 
 ## Installation
 
@@ -13,14 +13,7 @@ composer require oxedition/laravel-welcome-minimal
 ## Usage
 
 ```php
-php artisan vendor:publish --tag=laravel-welcome-minimal-views --force
-php artisan vendor:publish --tag=laravel-welcome-minimal-components --force
-```
-
-### Testing
-
-```bash
-composer test
+php artisan minimal:install
 ```
 
 ### Changelog
