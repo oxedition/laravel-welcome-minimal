@@ -23,8 +23,8 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-welcome-minimal.php'),
-            ], 'config');
+                __DIR__.'/../config/config.php' => config_path('minimal.php'),
+            ], 'laravel-welcome-minimal-config');
 
             // Publishing the views.
             $this->publishes([
@@ -58,7 +58,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-welcome-minimal');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'minimal');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-welcome-minimal', function () {

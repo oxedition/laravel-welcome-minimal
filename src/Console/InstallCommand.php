@@ -33,7 +33,8 @@ class InstallCommand extends Command
      */
     public function handle()
     {
-
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-config', '--force' => true]);
+        $this->info("Install config!");
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-views', '--force' => true]);
         $this->info("Install view!");
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-components', '--force' => true]);
@@ -69,10 +70,12 @@ class InstallCommand extends Command
         $path = app()->environmentFilePath();
         $env = file_get_contents($path);
     
-        $old_value = env($key);
+        $old_value = config('minimal.minimal');
     
         if (!str_contains($env, $key.'=')) {
             $env .= sprintf("\n%s=%s\n", $key, $value);
+        } else if ($old_value) {
+            $env = str_replace(sprintf('%s=%s', $key, $old_value), sprintf('%s=%s', $key, $value), $env);
         } else {
             $env = str_replace(sprintf('%s=', $key), sprintf('%s=%s',$key, $value), $env);
         }
