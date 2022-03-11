@@ -58,7 +58,7 @@
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           fucking title with nothing but with button max
+           title with nothing but with button max
         </x-slot>
         {{-- start slot --}}
         <p class="mb-6">
@@ -86,7 +86,7 @@
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           fucking title with paysage image
+           title with paysage image
         </x-slot>
         
         {{-- image --}}
@@ -99,10 +99,10 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-6 uppercase mr-6">
-            button incitative
+            button
         </x-ox.button.button>
         <x-ox.button.button-text class="my-6 uppercase">
-            button to convain
+            button text
         </x-ox.button.button-text>
         <x-ox.button.button-primary class="my-6 uppercase">
             button primary
@@ -122,7 +122,7 @@
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           fucking title with paysage image
+           title with paysage image
         </x-slot>
         
         {{-- image --}}
@@ -135,10 +135,10 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-6 uppercase mr-6">
-            button incitative
+            button
         </x-ox.button.button>
         <x-ox.button.button-text class="my-6 uppercase">
-            button to convain
+            button text
         </x-ox.button.button-text>      
         {{-- end slot --}}        
 
@@ -151,7 +151,7 @@
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           fucking title with portrait image
+           title with portrait image
         </x-slot>
         
         {{-- image --}}
@@ -164,10 +164,10 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-6 uppercase mr-6">
-            button incitative
+            button
         </x-ox.button.button>
         <x-ox.button.button-text class="my-6 uppercase">
-            button to convain
+            button text
         </x-ox.button.button-text>
         {{-- end slot --}}        
 
@@ -180,7 +180,7 @@
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           fucking title with square image
+           title with square image
         </x-slot>
         
         {{-- image --}}
@@ -193,10 +193,10 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-6 uppercase mr-6">
-            button incitative
+            button
         </x-ox.button.button>
         <x-ox.button.button-text class="my-6 uppercase">
-            button to convain
+            button text
         </x-ox.button.button-text>   
 
     </x-ox.block.introduction>
@@ -207,14 +207,14 @@
         <x-slot:image>
             /images/michal-kubalczyk-tdMu8W9NTnY-unsplash.jpg
         </x-slot:image>
-        <x-slot:title class="text-center">Une argumentation de choix pour un produit magnifique !<br> ta mère !</x-slot:title>
+        <x-slot:title class="text-center"> Lorem ipsum dolor sit amet !<br> sed diam !</x-slot:title>
         <x-ox.columns>
             <x-ox.column>
                 <x-slot:icon>
                     <x-feathericon-alert-triangle class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -225,7 +225,7 @@
                     <x-feathericon-crosshair class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -236,7 +236,7 @@
                     <x-feathericon-award class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -247,7 +247,7 @@
                     <x-feathericon-gift class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -257,14 +257,14 @@
     </x-ox.block.argumentation>
     <hr>
     <x-ox.block.argumentation>
-        <x-slot:title class="text-center">Une argumentation de choix pour un produit magnifique !<br> ta mère !</x-slot:title>
+        <x-slot:title class="text-center"> Lorem ipsum dolor sit amet !<br> Sed diam !</x-slot:title>
         <x-ox.columns>
             <x-ox.column>
                 <x-slot:icon>
                     <x-feathericon-alert-triangle class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -275,7 +275,7 @@
                     <x-feathericon-crosshair class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -286,7 +286,7 @@
                     <x-feathericon-award class="mx-auto" height="48" width="48" />
                 </x-slot:icon>
                 <x-slot:title>
-                    Une super affaire de malade
+                    Lorem ipsum dolor sit amet
                 </x-slot:title>
                 <x-slot:content>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
@@ -295,7 +295,7 @@
         </x-ox.columns>
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="my-6 uppercase">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary>  
         </x-slot:button>
     </x-ox.block.argumentation>
@@ -303,7 +303,7 @@
     <hr>
     <x-ox.block.1-column>
         <x-slot:title>
-            coucou tu suces connasse ?
+            Lorem ipsum dolor sit amet
         </x-slot:title>
         <x-slot:image>
             /images/michal-kubalczyk-tdMu8W9NTnY-unsplash.jpg
@@ -313,16 +313,16 @@
         <p class="mb-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="my-6 uppercase mr-6">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary> 
             <x-ox.button.button-primary class="my-6 uppercase">
-                button to convain
+                button primary
             </x-ox.button.button-primary>   
             <x-ox.button.button-text class="my-6 uppercase">
-                button to convain
+                button text
             </x-ox.button.button-text> 
             <x-ox.button.button class="my-6 uppercase">
-                button to convain
+                button
             </x-ox.button.button>
         </x-slot:button>
 
@@ -331,23 +331,23 @@
     <hr>
     <x-ox.block.1-column>
         <x-slot:title>
-            coucou tu suces connasse ?
+            Lorem ipsum dolor sit amet
         </x-slot:title>
         {{-- Start $slot  --}}
 
         <p class="mb-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="my-6 uppercase mr-6">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary> 
             <x-ox.button.button-primary class="my-6 uppercase">
-                button to convain
+                button primary
             </x-ox.button.button-primary>   
             <x-ox.button.button-text class="my-6 uppercase">
-                button to convain
+                button text
             </x-ox.button.button-text> 
             <x-ox.button.button class="my-6 uppercase">
-                button to convain
+                button
             </x-ox.button.button>
         </x-slot:button>
 
@@ -357,7 +357,7 @@
 
     <x-ox.block.1-column>
         <x-slot:title>
-            coucou tu suces connasse ?
+            Lorem ipsum dolor sit amet
         </x-slot:title>
         <x-slot:image class="w-2/3">
             /images/michal-kubalczyk-tdMu8W9NTnY-unsplash.jpg
@@ -366,16 +366,16 @@
 
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="my-6 uppercase mr-6">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary> 
             <x-ox.button.button-primary class="my-6 uppercase">
-                button to convain
+                button primary
             </x-ox.button.button-primary>   
             <x-ox.button.button-text class="my-6 uppercase">
-                button to convain
+                button text
             </x-ox.button.button-text> 
             <x-ox.button.button class="my-6 uppercase">
-                button to convain
+                button
             </x-ox.button.button>
         </x-slot:button>
 
@@ -384,7 +384,7 @@
     <hr>
     <x-ox.block.1-column>
         <x-slot:title>
-            coucou tu suces connasse ?
+            Lorem ipsum dolor sit amet
         </x-slot:title>
         {{-- Start $slot  --}}
 
@@ -394,16 +394,16 @@
 
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="my-6 uppercase mr-6">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary> 
             <x-ox.button.button-primary class="my-6 uppercase">
-                button to convain
+                button primary
             </x-ox.button.button-primary>   
             <x-ox.button.button-text class="my-6 uppercase">
-                button to convain
+                button text
             </x-ox.button.button-text> 
             <x-ox.button.button class="my-6 uppercase">
-                button to convain
+                button
             </x-ox.button.button>
         </x-slot:button>
 
@@ -411,7 +411,7 @@
     <hr>
     <x-ox.block.1-column>
         <x-slot:title>
-            coucou tu suces connasse ?
+            Lorem ipsum dolor sit amet
         </x-slot:title>
         {{-- Start $slot  --}}
         <x-ox.columns>
@@ -429,7 +429,7 @@
         {{-- end $slot  --}}
         <x-slot:button class="text-center">
             <x-ox.button.button-secondary class="uppercase">
-                button to convain
+                button secondary
             </x-ox.button.button-secondary> 
         </x-slot:button>
 
@@ -442,8 +442,8 @@
         Quotes, parts of poems can also be a part of figure.
 
         <x-slot:author>
-            Anal NEST 
-            <small class="block text-sm">Suceur de bite</small>
+            Jhon Deo
+            <small class="block text-sm">Company</small>
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>
@@ -454,8 +454,8 @@
         Quotes, parts of poems can also be a part of figure.
 
         <x-slot:author>
-            Anal NEST 
-            <small class="block text-sm">Suceur de bite</small>
+            Jhon Deo
+            <small class="block text-sm">Company</small>
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>    
@@ -463,8 +463,8 @@
     <x-ox.block.testimonial :inverse="true">
         <x-slot:image>/images/valerie-lendel-0b_7r_dNjFs-unsplash.jpg</x-slot:image>
         <x-slot:author>
-            Anal NEST 
-            <small class="block text-sm">Suceur de bite</small>
+            Jhon Deo 
+            <small class="block text-sm">Company</small>
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>    
@@ -472,8 +472,8 @@
     <x-ox.block.testimonial  :inverse="true">
         Quotes, parts of poems can also be a part of figure.
         <x-slot:author>
-            Anal NEST 
-            <small class="block text-sm">Suceur de bite</small>
+            Jhon Deo
+            <small class="block text-sm">Company</small>
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>
@@ -481,7 +481,7 @@
     <x-ox.block.testimonial  :inverse="true">
         Quotes, parts of poems can also be a part of figure.
         <x-slot:author>
-            Anal NEST 
+            Jhon Deo
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>    
@@ -489,7 +489,7 @@
     <x-ox.block.testimonial :inverse="true">
         Quotes, parts of poems can also be a part of figure.
         <x-slot:author>
-            <small class="block text-sm">Suceur de bite</small>
+            <small class="block text-sm">Company</small>
         </x-slot:author>
     </x-ox.block.testimonial>
     <hr>
@@ -548,7 +548,7 @@
     @endphp
 
     <x-ox.footer.minimal-more :network="$network">
-        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="/sucker-group.com" class="underline">sucker group</a>
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.minimal-more>
     
     </body>
