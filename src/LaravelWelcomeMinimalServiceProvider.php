@@ -36,7 +36,7 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
             ], 'laravel-welcome-minimal-components'); 
             
             $this->publishes([
-                __DIR__.'/../resources/public/' => public_path('images/'),
+                __DIR__.'/../resources/public/' => public_path('/'),
             ], 'laravel-welcome-minimal-images');             
 
             // Publishing assets.
