@@ -45,5 +45,9 @@ class InstallCommand extends Command
 
     }
 
+    protected function replaceInFile($search, $replace, $path)
+    {
+        file_put_contents($path, str_replace($search, $replace, file_get_contents($path)));
+    }
 
 }
