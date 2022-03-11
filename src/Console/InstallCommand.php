@@ -42,9 +42,19 @@ class InstallCommand extends Command
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-css', '--force' => true]);
         $this->info("Install css!");
 
+        
+
         $this->replaceInFile("require('tailwindcss'),", "require('tailwindcss'), require('autoprefixer'),", base_path('webpack.mix.js'));
         $this->info("Add autoprefixer to webpack.mix.js!");
 
+        $colors = ['red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
+        $color = $this->choice(
+            'Which color?',
+            $colors,
+            $defaultIndex
+        );
+
+        $this->info($color);
     }
 
     protected function replaceInFile($search, $replace, $path)
