@@ -1,6 +1,6 @@
 # Laravel welcome minimal template
 
-Laravel welcome minimal is a replacement template for Laravel welcome page.
+Laravel welcome minimal is a replacement template for Laravel welcome page. test
 
 ## Installation
 
