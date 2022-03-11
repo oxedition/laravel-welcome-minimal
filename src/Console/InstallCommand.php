@@ -34,14 +34,16 @@ class InstallCommand extends Command
     {
 
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-views', '--force' => true]);
+        $this->info("Install view!");
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-components', '--force' => true]);
+        $this->info("Install components!");
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-images', '--force' => true]);
-
+        $this->info("Install images!");
         $this->callSilent('vendor:publish', ['--tag' => 'laravel-welcome-minimal-css', '--force' => true]);
-
+        $this->info("Install css!");
 
         $this->replaceInFile("require('tailwindcss'),", "require('tailwindcss'), require('autoprefixer'),", base_path('webpack.mix.js'));
-
+        $this->info("Add autoprefixer to !");
 
     }
 
