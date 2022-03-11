@@ -5,6 +5,7 @@ namespace Oxedition\LaravelWelcomeMinimal\Console;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
+
 use Illuminate\Support\Str;
 use Symfony\Component\Process\PhpExecutableFinder;
 use Symfony\Component\Process\Process;
@@ -50,16 +51,33 @@ class InstallCommand extends Command
         $colors = ['red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
         $color = $this->choice(
             'Which color?',
-            $colors,
-            $defaultIndex
+            $colors
         );
-
-        $this->info($color);
+        $this->setEnvValue('MINIMAL',$color);
+        $this->info('Color : '.$color.' is now the main color !');
+        $this->call('config:cache');
+        
     }
 
     protected function replaceInFile($search, $replace, $path)
     {
         file_put_contents($path, str_replace($search, $replace, file_get_contents($path)));
-    }
+    }  
+
+    protected function setEnvValue(string $key, string $value)
+    {
+        $path = app()->environmentFilePath();
+        $env = file_get_contents($path);
+    
+        $old_value = env($key);
+    
+        if (!str_contains($env, $key.'=')) {
+            $env .= sprintf("\n%s=%s\n", $key, $value);
+        } else {
+            $env = str_replace(sprintf('%s=', $key), sprintf('%s=%s',$key, $value), $env);
+        }
+    
+        file_put_contents($path, $env);
+    } 
 
 }
