@@ -1,8 +1,4 @@
-# Very short description of the package
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/oxedition/laravel-welcome-minimal.svg?style=flat-square)](https://packagist.org/packages/oxedition/laravel-welcome-minimal)
-[![Total Downloads](https://img.shields.io/packagist/dt/oxedition/laravel-welcome-minimal.svg?style=flat-square)](https://packagist.org/packages/oxedition/laravel-welcome-minimal)
-![GitHub Actions](https://github.com/oxedition/laravel-welcome-minimal/actions/workflows/main.yml/badge.svg)
+# Laravel welcome minimal template
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
@@ -18,6 +14,7 @@ composer require oxedition/laravel-welcome-minimal
 
 ```php
 php artisan vendor:publish --tag=laravel-welcome-minimal-views --force
+php artisan vendor:publish --tag=laravel-welcome-minimal-components --force
 ```
 
 ### Testing
@@ -41,7 +38,6 @@ If you discover any security related issues, please email os@oxedit.io instead o
 ## Credits
 
 -   [oxedition](https://github.com/oxedition)
--   [All Contributors](../../contributors)
 
 ## License
 
