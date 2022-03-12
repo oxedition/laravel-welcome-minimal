@@ -4,6 +4,7 @@ namespace Oxedition\LaravelWelcomeMinimal;
 
 use Illuminate\Support\ServiceProvider;
 use Oxedition\LaravelWelcomeMinimal\Console\InstallCommand;
+use Oxedition\LaravelWelcomeMinimal\Console\ColorCommand;
 
 class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
 {
@@ -12,21 +13,12 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        /*
-         * Optional methods to load your package assets
-         */
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'laravel-welcome-minimal');
-        //$this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-welcome-minimal');
-      
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('minimal.php'),
             ], 'laravel-welcome-minimal-config');
 
-            // Publishing the views.
             $this->publishes([
                 __DIR__.'/../resources/views/' => resource_path('views/'),
             ], 'laravel-welcome-minimal-views');
@@ -39,15 +31,14 @@ class LaravelWelcomeMinimalServiceProvider extends ServiceProvider
                 __DIR__.'/../resources/public/' => public_path('/'),
             ], 'laravel-welcome-minimal-images');             
 
-            // Publishing assets.
             $this->publishes([
                  __DIR__.'/../resources/css' => resource_path('css/'),
             ], 'laravel-welcome-minimal-css');
 
 
-            // Registering package commands.
             $this->commands([
                 InstallCommand::class,
+                ColorCommand::class,
             ]);
         }
     }

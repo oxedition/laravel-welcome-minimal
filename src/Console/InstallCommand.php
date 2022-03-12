@@ -56,6 +56,31 @@ class InstallCommand extends Command
         );
         $this->setEnvValue('MINIMAL',$color);
         $this->info('Color : '.$color.' is now the main color !');
+
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/welcome.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/column.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/columns.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/logo.blade.php'));
+
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/header/complex.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/header/simple.blade.php'));
+
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/footer/minimal-more.blade.php'));
+        
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button-primary.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button-secondary.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button-text.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button.blade.php'));
+
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/1-column.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/2-columns.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/argumentation.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/introduction.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/pages.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/price.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/testimonial.blade.php'));
+
         $this->call('config:cache');
         
     }
