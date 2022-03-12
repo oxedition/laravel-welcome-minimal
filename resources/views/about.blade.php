@@ -2,9 +2,10 @@
     <div class="pt-4 bg-green-10">
         <div class="min-h-screen flex flex-col items-center pt-6 sm:pt-0">
             <div>
-                <x-jet-authentication-card-logo />
+                <button-text onclick="window.location.href='/'" href="/">
+                    back home
+                </button-text>
             </div>
-
             <div class="w-full sm:max-w-2xl mt-6 p-6 bg-white shadow-md overflow-hidden sm:rounded-lg prose text-black">
                 <h1>About us</h1>
                 <p>
