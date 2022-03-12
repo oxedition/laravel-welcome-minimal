@@ -26,6 +26,8 @@ If you want to change the color of the interface.
 php artisan minimal:color
 ```
 
+Please check [DOCUMENTATION](DOC.md) for more information.
+
 ### Next releasez will include
 
 - mobile version
