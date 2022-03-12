@@ -1,30 +1,23 @@
-@props(['network'=>null])
+@props([
+    'network'=>null,
+    'menu'=>null,
+])
+
 <footer {{ $attributes->merge(['class' => 'my-12 py-24 text-md text-black']) }}>
     <div class="flex flex-col container mx-auto">
-
+        
         <!-- nav -->
-        <nav class="uppercase w-full">
-            <ul class="flex flex-wrap justify-center">
-                <li class="py-6 px-6">
-                    <a href="">About us</a>
-                </li>                
-                <li class="py-6 px-6">
-                    <a href="">FAQ</a>
-                </li>  
-                <li class="py-6 px-6">
-                    <a href="">Support</a>
-                </li>                                
-                <li class="py-6 px-6">
-                    <a href="">Legal</a>
-                </li>
-                <li class="py-6 px-6">
-                    <a href="">Privacy</a>
-                </li>                  
-                <li class="py-6 px-6">
-                    <a href="">Terms</a>
-                </li>                
-            </ul>
-        </nav>
+        @isset($menu)
+            <nav class="uppercase w-full">
+                <ul class="flex flex-wrap justify-center">
+                    @foreach($menu as $m)
+                    <li class="py-6 px-6">
+                        <a href="{{ $m['href'] }}" title="{{ $m['title'] }}">{{ $m['name'] }}</a>
+                    </li>
+                    @endforeach 
+                </ul>
+            </nav>
+        @endisset
         <!-- nav -->
 
         <!-- networks -->
@@ -122,8 +115,11 @@
         @endisset
         <!-- networks -->
     </div>
+
+    <!-- slot -->
     <div class="container mx-auto @if(!$network) mt-6 @endif text-center text-sm uppercase">
         {{ $slot }}
     </div>
-    
+    <!-- slot -->
+
 </footer>

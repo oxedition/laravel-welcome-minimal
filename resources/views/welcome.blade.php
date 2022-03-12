@@ -525,6 +525,10 @@
         Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.footer>
 
+    <x-ox.footer.footer :menu="config('minimal.menu')">
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+    </x-ox-footer.footer> 
+
     <x-ox.footer.footer>
         Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.footer>    
