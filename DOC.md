@@ -26,6 +26,17 @@ Footer without social networks en sub menu.
 </x-ox-footer.footer>    
 ```
 
+If you want to add menu zone. 
+
+```html
+<x-ox.footer.footer :menu="config('minimal.menu')">
+    Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+</x-ox-footer.footer>    
+```
+
+Please see config/minimal.php inside your application.
+
+
 # ICONS
 
 You can see the icon pack here [https://feathericons.com](https://feathericons.com) 

@@ -11,9 +11,9 @@
             <nav class="uppercase w-full">
                 <ul class="flex flex-wrap justify-center">
                     @foreach($menu as $m)
-                    <li class="py-6 px-6">
-                        <a href="{{ $m['href'] }}" title="{{ $m['title'] }}">{{ $m['name'] }}</a>
-                    </li>
+                        <li class="py-6 px-6">
+                            <a href="{{ $m['href'] }}" title="{{ $m['title'] }}">{{ $m['label'] }}</a>
+                        </li>
                     @endforeach 
                 </ul>
             </nav>

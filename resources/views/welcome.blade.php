@@ -468,70 +468,23 @@
     </x-ox.block.testimonial>
     <hr>
 
-    @php
-    /*
-     cela va dans le config : 
-       - facebook
-       - twitter
-       - instagram
-       - linkedin
-       - youtube
-       - github
-    */
-    $network = [
-        'facebook'=>[
-            'href'=>'https://facebook.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],
-        'twitter'=>[
-            'href'=>'https://twitter.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],
-        'instagram'=>[
-            'href'=>'https://instagram.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],
-        'linkedin'=>[
-            'href'=>'https://linkedin.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],
-        'youtube'=>[
-            'href'=>'https://youtube.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],
-        'github'=>[
-            'href'=>'https://github.com',
-            'target'=>'_blank',
-            'title'=>'mon titre xxxxx'
-        ],                                
-    ];
-
-    $menu = [
-        'about'=> [
-            'href',
-            'title',
-            'name',
-        ]
-    ]
-
-    @endphp
-
-    <x-ox.footer.footer :network="$network">
-        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+    <!-- footer -->
+    <x-ox.footer.footer :network="config('minimal.network')">
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="https://laravel.com" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.footer>
-
+    <hr>
     <x-ox.footer.footer :menu="config('minimal.menu')">
-        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="https://laravel.com" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.footer> 
-
+    <hr>
+    <x-ox.footer.footer :menu="config('minimal.menu')" :network="config('minimal.network')">
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="https://laravel.com" class="underline">{{ config('app.name', 'Laravel') }}</a>
+    </x-ox-footer.footer>      
+    <hr>
     <x-ox.footer.footer>
-        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="https://laravel.com" class="underline">{{ config('app.name', 'Laravel') }}</a>
     </x-ox-footer.footer>    
-    
+    <!-- footer -->
+
     </body>
 </html>
