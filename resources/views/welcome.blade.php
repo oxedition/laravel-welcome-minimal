@@ -521,9 +521,13 @@
 
     @endphp
 
-    <x-ox.footer.minimal-more :network="$network">
+    <x-ox.footer.footer :network="$network">
         Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
-    </x-ox-footer.minimal-more>
+    </x-ox-footer.footer>
+
+    <x-ox.footer.footer>
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+    </x-ox-footer.footer>    
     
     </body>
 </html>

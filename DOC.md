@@ -10,11 +10,15 @@ You can refer to the [color listing](https://tailwindcss.com/docs/customizing-co
 
 # HEADER
 
-you can put header with fix position. But you need to add some padding to body tag.
+You can put header with fix position. But you need to add some padding to body tag.
 
 ```blade
 <x-ox.header.header class="fixed" />
 ```
+
+# FOOTER
+
+
 
 # ICONS
 
