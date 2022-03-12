@@ -18,7 +18,13 @@ You can put header with fix position. But you need to add some padding to body t
 
 # FOOTER
 
+Footer without social networks en sub menu. 
 
+```html
+    <x-ox.footer.footer>
+        Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="" class="underline">{{ config('app.name', 'Laravel') }}</a>
+    </x-ox-footer.footer>    
+```
 
 # ICONS
 
