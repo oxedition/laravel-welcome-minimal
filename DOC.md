@@ -6,6 +6,8 @@ If you want to change the color.
 php artisan minimal:color
 ```
 
+You can refer to the [color listing](https://tailwindcss.com/docs/customizing-colors) of [tainwindcss.com](https://tailwindcss.com)
+
 # HEADER
 
 you can put header with fix position. But you need to add some padding to body tag.

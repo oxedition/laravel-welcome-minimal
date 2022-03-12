@@ -37,7 +37,7 @@ Please check [DOCUMENTATION](DOC.md) for more information.
 ### Credits
 
 Thanks to https://github.com/brunocfalcao/blade-feather-icons for blade feather icons, [https://feathericons.com](https://feathericons.com) and https://github.com/blade-ui-kit/blade-icons
-
+https://tailwindcss.com
 
 ### Changelog
 
