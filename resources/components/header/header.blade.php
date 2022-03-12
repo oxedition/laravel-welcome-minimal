@@ -1,4 +1,4 @@
-<header {{ $attributes->merge(['class' => 'w-full flex items-center py-6 px-6 mb-4 shadow-xl']) }}>
+<header {{ $attributes->merge(['class' => 'w-full flex items-center py-6 px-6 mb-4 shadow-xl bg-blue-100']) }}>
     <div class="w-1/4 flex-1">
      <a href="/" class="text-sm lg:text-2xl">LOGOTYPE</a>
     </div>

@@ -24,10 +24,9 @@
         </style>
     </head>
     <body class=" bg-blue-100">
-        <x-ox.header.header class="fixed">
-
-        </x-ox.header.header>
-       <hr>
+        
+        <x-ox.header.header/>
+        <hr>
     {{-- start block.introduction --}}
     <x-ox.block.introduction>
         
