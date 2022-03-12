@@ -51,7 +51,6 @@ class InstallCommand extends Command
 
         /* jetstream */
         $this->replaceInFile('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">', '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">', resource_path('views/layouts/app.blade.php'));
-        $this->replaceInFile('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">', '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">', resource_path('views/layouts/guest.blade.php'));
 
         $this->info("Add autoprefixer to webpack.mix.js!");
 
@@ -89,11 +88,11 @@ class InstallCommand extends Command
 
         /* jetstream min-h-screen bg-gray-100 */
         $this->replaceInFile('min-h-screen bg-gray-10', 'min-h-screen bg-'.$color.'-10', resource_path('views/layouts/app.blade.php'));
-        $this->replaceInFile('text-gray-900', 'text-black', resource_path('views/layouts/guest.blade.php'));
         $this->replaceInFile('bg-gray-100', 'bg-'.$color.'-10', resource_path('views/terms.blade.php'));
         $this->replaceInFile('bg-gray-100', 'bg-'.$color.'-10', resource_path('views/policy.blade.php'));
 
         $this->call('config:cache');
+        $this->call('route:cache');
         
     }
 

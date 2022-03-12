@@ -72,6 +72,7 @@ class ColorCommand extends Command
         
 
         $this->call('config:cache');
+        $this->call('route:cache');
     }
 
     protected function replaceInFile($search, $replace, $path)
