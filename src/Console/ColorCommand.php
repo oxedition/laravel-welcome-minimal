@@ -66,6 +66,8 @@ class ColorCommand extends Command
         $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/components/ox/block/price.blade.php'));
         $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/components/ox/block/testimonial.blade.php'));
 
+        $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/layouts/guest.blade.php'));
+
         $this->setEnvValue('MINIMAL',$color);
         $this->info('Color : '.$color.' is now the main color !');
 
