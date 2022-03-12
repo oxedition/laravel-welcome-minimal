@@ -22,12 +22,12 @@ return [
             'label'=>'Support'
         ],  
         [
-            'href'=>'/terms',
+            'href'=>'/terms-of-service',
             'title'=>'Terms',
             'label'=>'Terms'
         ],
         [
-            'href'=>'/policy',
+            'href'=>'/privacy-policy',
             'title'=>'Policy',
             'label'=>'Policy'
         ],                                  
