@@ -1,3 +1,11 @@
+# CHANGE COLOR
+
+If you want to change the color. 
+
+```php
+php artisan minimal:color
+```
+
 # HEADER
 
 you can put header with fix position. But you need to add some padding to body tag.
@@ -6,7 +14,7 @@ you can put header with fix position. But you need to add some padding to body t
 <x-ox.header.header class="fixed" />
 ```
 
-# ICON
+# ICONS
 
 You can see the icon pack here [https://feathericons.com](https://feathericons.com) 
 
