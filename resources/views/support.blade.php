@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <div class="pt-4 bg-green-10">
+    <div class="pt-40">
         <div class="min-h-screen flex flex-col items-center pt-6 sm:pt-0">
             <div>
                 <button-text onclick="window.location.href='/'" href="/">

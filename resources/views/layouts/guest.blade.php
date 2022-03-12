@@ -27,7 +27,7 @@
             }
         </style>
     </head>
-    <body class=" bg-blue-100">
+    <body class=" bg-blue-10">
         {{ $slot }}
     </body>
 </html>
