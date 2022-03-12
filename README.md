@@ -20,6 +20,12 @@ npm install
 npm run watch
 ```
 
+If you want to change the color of the interface. 
+
+```php
+php artisan minimal:color
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
