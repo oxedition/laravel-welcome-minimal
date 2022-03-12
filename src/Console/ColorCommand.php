@@ -40,6 +40,8 @@ class ColorCommand extends Command
             'Which color?',
             $colors
         );
+        $this->replaceInFile('min-h-screen bg-'.$old_value.'-10', 'min-h-screen bg-'.$color.'-10', resource_path('views/layouts/app.blade.php'));
+
         $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/welcome.blade.php'));
         $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/components/ox/button.blade.php'));
         $this->replaceInFile("-".$old_value."-", "-".$color."-", resource_path('views/components/ox/column.blade.php'));

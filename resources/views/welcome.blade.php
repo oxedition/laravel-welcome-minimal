@@ -23,7 +23,7 @@
             }
         </style>
     </head>
-    <body class=" bg-green-100">
+    <body class=" bg-blue-100">
        <header class="w-full flex items-center py-6 px-6 mb-4 shadow-xl">
            <div class="w-1/4 flex-1">
             <a href="/" class="text-2xl">LOGOTYPE</a>
@@ -43,9 +43,9 @@
                             <a href="{{ route('login') }}">Sign In</a>
                         </li>
                         <li class="ml-6">
-                            <x-ox.button.button-primary class="my-6 uppercase">
+                            <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 border border-black hover:bg-black hover:text-blue-100 hover:shadow-xl transition">
                                Create account
-                            </x-ox.button.button-primary>                               
+                            </a>                             
                         </li>                    
                     @endauth
                 @endif
@@ -90,7 +90,7 @@
         </x-slot>
         
         {{-- image --}}
-        <x-slot:image class="border border-8 border-green-200">
+        <x-slot:image class="border border-8 border-blue-200">
             /images/deon-black-M5p7exr1gUg-unsplash-2.jpg
         </x-slot:image>
 
@@ -126,7 +126,7 @@
         </x-slot>
         
         {{-- image --}}
-        <x-slot:image class="border border-8 border-green-200">
+        <x-slot:image class="border border-8 border-blue-200">
             /images/deon-black-M5p7exr1gUg-unsplash-2.jpg
         </x-slot:image>
 
@@ -155,7 +155,7 @@
         </x-slot>
         
         {{-- image --}}
-        <x-slot:image class="border border-8 border-green-200">
+        <x-slot:image class="border border-8 border-blue-200">
             /images/brian-kyed-P7EFJs577Xg-unsplash.jpg
         </x-slot:image>
 
@@ -184,7 +184,7 @@
         </x-slot>
         
         {{-- image --}}
-        <x-slot:image class="border border-8 border-green-200">
+        <x-slot:image class="border border-8 border-blue-200">
             /images/alvan-nee-iW8WH1Z5bFA-unsplash.jpg
         </x-slot:image>
 

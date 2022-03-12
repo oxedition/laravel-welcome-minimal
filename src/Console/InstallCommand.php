@@ -47,6 +47,11 @@ class InstallCommand extends Command
         
 
         $this->replaceInFile("require('tailwindcss'),", "require('tailwindcss'), require('autoprefixer'),", base_path('webpack.mix.js'));
+        $this->replaceInFile("'Nunito'", "'Space Grotesk'", base_path('tailwind.config.js'));
+
+        /* jetstream */
+        $this->replaceInFile('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">', '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">', resource_path('views/layouts/app.blade.php'));
+
         $this->info("Add autoprefixer to webpack.mix.js!");
 
         $colors = ['red','orange','amber','yellow','lime','green','emerald','teal','cyan','sky','blue','indigo','violet','purple','fuchsia','pink','rose'];
@@ -80,6 +85,9 @@ class InstallCommand extends Command
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/pages.blade.php'));
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/price.blade.php'));
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/block/testimonial.blade.php'));
+
+        /* jetstream min-h-screen bg-gray-100 */
+        $this->replaceInFile('min-h-screen bg-gray-10', 'min-h-screen bg-'.$color.'-10', resource_path('views/layouts/app.blade.php'));
 
         $this->call('config:cache');
         
