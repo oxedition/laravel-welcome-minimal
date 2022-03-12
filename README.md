@@ -34,6 +34,11 @@ Please check [DOCUMENTATION](DOC.md) for more information.
 - change color for jeatstream color
 - add route for page
 
+### Credits
+
+Thanks to https://github.com/brunocfalcao/blade-feather-icons for blade feather icons, [https://feathericons.com](https://feathericons.com) and https://github.com/blade-ui-kit/blade-icons
+
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
