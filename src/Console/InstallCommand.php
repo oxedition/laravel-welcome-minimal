@@ -86,8 +86,11 @@ class InstallCommand extends Command
         $this->replaceInFile("-blue-", "-".$color."-", resource_path('views/components/ox/block/price.blade.php'));
         $this->replaceInFile("-blue-", "-".$color."-", resource_path('views/components/ox/block/testimonial.blade.php'));
 
+        $this->replaceInFile("-blue-", "-".$color."-", resource_path('views/layouts/guest.blade.php'));
+
         /* jetstream min-h-screen bg-gray-100 */
         $this->replaceInFile('min-h-screen bg-gray-10', 'min-h-screen bg-'.$color.'-10', resource_path('views/layouts/app.blade.php'));
+        
         $this->replaceInFile('bg-gray-100', 'bg-'.$color.'-10', resource_path('views/terms.blade.php'));
         $this->replaceInFile('bg-gray-100', 'bg-'.$color.'-10', resource_path('views/policy.blade.php'));
 
