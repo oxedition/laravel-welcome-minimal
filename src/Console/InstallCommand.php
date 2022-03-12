@@ -68,10 +68,10 @@ class InstallCommand extends Command
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/columns.blade.php'));
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/logo.blade.php'));
 
-        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/header/complex.blade.php'));
-        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/header/simple.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/header/header.blade.php'));
+    
 
-        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/footer/minimal-more.blade.php'));
+        $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/footer/footer.blade.php'));
         
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button-primary.blade.php'));
         $this->replaceInFile("-green-", "-".$color."-", resource_path('views/components/ox/button/button-secondary.blade.php'));
