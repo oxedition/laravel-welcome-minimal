@@ -4,11 +4,11 @@
         $inverse = false;
     @endphp
 @endisset
-<figure {{ $attributes->merge(['class' => 'w-full ' .( $inverse ? ' bg-black text-green-200 py-24 shadow-xl':'py-12')]) }}>
+<figure {{ $attributes->merge(['class' => 'w-full ' .( $inverse ? ' bg-black text-blue-200 py-24 shadow-xl':'py-12')]) }}>
 
     @isset($image)
         @if(trim($image) !== '')
-            <img src="{{ $image }}" class="w-32 h-32 object-cover mx-auto border border-8 border-green-200 shadow-xl rounded-full mb-12">
+            <img src="{{ $image }}" class="w-32 h-32 object-cover mx-auto border border-8 border-blue-200 shadow-xl rounded-full mb-12">
         @endif
     @endisset
 
