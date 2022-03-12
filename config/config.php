@@ -22,14 +22,14 @@ return [
             'label'=>'Support'
         ],  
         [
-            'href'=>'/terms-of-service',
+            'href'=>'/terms',
             'title'=>'Terms',
             'label'=>'Terms'
         ],
         [
-            'href'=>'/privacy-policy',
-            'title'=>'Policy',
-            'label'=>'Policy'
+            'href'=>'/privacy',
+            'title'=>'Privacy',
+            'label'=>'Privacy'
         ],                                  
     ],
     'network' => [
