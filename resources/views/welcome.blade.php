@@ -24,34 +24,9 @@
         </style>
     </head>
     <body class=" bg-blue-100">
-       <header class="w-full flex items-center py-6 px-6 mb-4 shadow-xl">
-           <div class="w-1/4 flex-1">
-            <a href="/" class="text-2xl">LOGOTYPE</a>
-           </div>
-           <nav class="w-3/4 flex justify-end items-center uppercase">
-            <ul class="flex items-center">
-                <li class="border-r border-r-black pr-6">
-                    <a href="/">Documentation</a>
-                </li>
-                @if (Route::has('login'))
-                    @auth
-                        <li class="ml-6">
-                            <a href="{{ url('/dashboard') }}">Dashboard</a>    
-                        </li>
-                    @else
-                        <li class="ml-6">
-                            <a href="{{ route('login') }}">Sign In</a>
-                        </li>
-                        <li class="ml-6">
-                            <a href="{{ route('login') }}" class="inline-flex items-center px-4 py-2 border border-black hover:bg-black hover:text-blue-100 hover:shadow-xl transition">
-                               Create account
-                            </a>                             
-                        </li>                    
-                    @endauth
-                @endif
-            </ul>
-           </nav>
-       </header>
+        <x-ox.header.header class="fixed">
+
+        </x-ox.header.header>
        <hr>
     {{-- start block.introduction --}}
     <x-ox.block.introduction>
@@ -64,16 +39,16 @@
         <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <x-ox.button.button class="my-6 uppercase mr-6">
-            button incitative
+        <x-ox.button.button class="my-4 md:my-6 uppercase">
+            button
         </x-ox.button.button>
-        <x-ox.button.button-text class="my-6 uppercase">
-            button to convain
+        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
+            button text
         </x-ox.button.button-text>
-        <x-ox.button.button-primary class="my-6 uppercase">
+        <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
             button primary
         </x-ox.button.button-primary>   
-        <x-ox.button.button-secondary class="my-6 uppercase">
+        <x-ox.button.button-secondary class="my-4 md:my-6 uppercase">
             button secondary
         </x-ox.button.button-secondary>        
         {{-- end slot --}}        
@@ -98,16 +73,16 @@
         <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <x-ox.button.button class="my-6 uppercase mr-6">
+        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
             button
         </x-ox.button.button>
-        <x-ox.button.button-text class="my-6 uppercase">
+        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
             button text
         </x-ox.button.button-text>
-        <x-ox.button.button-primary class="my-6 uppercase">
+        <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
             button primary
         </x-ox.button.button-primary>   
-        <x-ox.button.button-secondary class="my-6 uppercase">
+        <x-ox.button.button-secondary class="my-4 md:my-6 uppercase">
             button secondary
         </x-ox.button.button-secondary>        
         {{-- end slot --}}        
@@ -134,10 +109,10 @@
         <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <x-ox.button.button class="my-6 uppercase mr-6">
+        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
             button
         </x-ox.button.button>
-        <x-ox.button.button-text class="my-6 uppercase">
+        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
             button text
         </x-ox.button.button-text>      
         {{-- end slot --}}        
@@ -163,10 +138,10 @@
         <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <x-ox.button.button class="my-6 uppercase mr-6">
+        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
             button
         </x-ox.button.button>
-        <x-ox.button.button-text class="my-6 uppercase">
+        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
             button text
         </x-ox.button.button-text>
         {{-- end slot --}}        
@@ -192,10 +167,10 @@
         <p class="mb-6">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
-        <x-ox.button.button class="my-6 uppercase mr-6">
+        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
             button
         </x-ox.button.button>
-        <x-ox.button.button-text class="my-6 uppercase">
+        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
             button text
         </x-ox.button.button-text>   
 
@@ -294,7 +269,7 @@
             </x-ox.column>                                
         </x-ox.columns>
         <x-slot:button class="text-center">
-            <x-ox.button.button-secondary class="my-6 uppercase">
+            <x-ox.button.button-secondary class="my-4 md:my-6 uppercase">
                 button secondary
             </x-ox.button.button-secondary>  
         </x-slot:button>
@@ -312,16 +287,16 @@
 
         <p class="mb-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <x-slot:button class="text-center">
-            <x-ox.button.button-secondary class="my-6 uppercase mr-6">
+            <x-ox.button.button-secondary class="my-4 md:my-6 uppercase mr-6">
                 button secondary
             </x-ox.button.button-secondary> 
-            <x-ox.button.button-primary class="my-6 uppercase">
+            <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
                 button primary
             </x-ox.button.button-primary>   
-            <x-ox.button.button-text class="my-6 uppercase">
+            <x-ox.button.button-text class="my-4 md:my-6 uppercase">
                 button text
             </x-ox.button.button-text> 
-            <x-ox.button.button class="my-6 uppercase">
+            <x-ox.button.button class="my-4 md:my-6 uppercase">
                 button
             </x-ox.button.button>
         </x-slot:button>
@@ -337,16 +312,16 @@
 
         <p class="mb-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
         <x-slot:button class="text-center">
-            <x-ox.button.button-secondary class="my-6 uppercase mr-6">
+            <x-ox.button.button-secondary class="my-4 md:my-6 uppercase mr-6">
                 button secondary
             </x-ox.button.button-secondary> 
-            <x-ox.button.button-primary class="my-6 uppercase">
+            <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
                 button primary
             </x-ox.button.button-primary>   
-            <x-ox.button.button-text class="my-6 uppercase">
+            <x-ox.button.button-text class="my-4 md:my-6 uppercase">
                 button text
             </x-ox.button.button-text> 
-            <x-ox.button.button class="my-6 uppercase">
+            <x-ox.button.button class="my-4 md:my-6 uppercase">
                 button
             </x-ox.button.button>
         </x-slot:button>
@@ -365,16 +340,16 @@
         {{-- Start $slot  --}}
 
         <x-slot:button class="text-center">
-            <x-ox.button.button-secondary class="my-6 uppercase mr-6">
+            <x-ox.button.button-secondary class="my-4 md:my-6 uppercase mr-6">
                 button secondary
             </x-ox.button.button-secondary> 
-            <x-ox.button.button-primary class="my-6 uppercase">
+            <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
                 button primary
             </x-ox.button.button-primary>   
-            <x-ox.button.button-text class="my-6 uppercase">
+            <x-ox.button.button-text class="my-4 md:my-6 uppercase">
                 button text
             </x-ox.button.button-text> 
-            <x-ox.button.button class="my-6 uppercase">
+            <x-ox.button.button class="my-4 md:my-6 uppercase">
                 button
             </x-ox.button.button>
         </x-slot:button>
@@ -393,16 +368,16 @@
         {{-- end $slot  --}}
 
         <x-slot:button class="text-center">
-            <x-ox.button.button-secondary class="my-6 uppercase mr-6">
+            <x-ox.button.button-secondary class="my-4 md:my-6 uppercase mr-6">
                 button secondary
             </x-ox.button.button-secondary> 
-            <x-ox.button.button-primary class="my-6 uppercase">
+            <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
                 button primary
             </x-ox.button.button-primary>   
-            <x-ox.button.button-text class="my-6 uppercase">
+            <x-ox.button.button-text class="my-4 md:my-6 uppercase">
                 button text
             </x-ox.button.button-text> 
-            <x-ox.button.button class="my-6 uppercase">
+            <x-ox.button.button class="my-4 md:my-6 uppercase">
                 button
             </x-ox.button.button>
         </x-slot:button>

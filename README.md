@@ -26,6 +26,12 @@ If you want to change the color of the interface.
 php artisan minimal:color
 ```
 
+### Next releasez will include
+
+- mobile version
+- change color for jeatstream color
+- add route for page
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.

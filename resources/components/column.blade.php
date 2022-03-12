@@ -1,4 +1,4 @@
-<div  {{ $attributes->merge(['class' => 'p-4']) }}>
+<div  {{ $attributes->merge(['class' => 'p-4 w-full']) }}>
     @isset($icon)
     <div class="text-center mb-6">
         {{ $icon }}

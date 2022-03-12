@@ -12,7 +12,7 @@
         @endif
     @endisset
 
-    <blockquote class="w-1/3 mx-auto text-4xl text-center mb-6">
+    <blockquote class="w-1/3 mx-auto text-2xl lg:text-4xl text-center mb-6 bold">
         {{ $slot }}
     </blockquote>
 

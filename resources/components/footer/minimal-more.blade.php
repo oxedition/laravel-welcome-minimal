@@ -4,23 +4,23 @@
 
         <!-- nav -->
         <nav class="uppercase w-full">
-            <ul class="flex justify-center">
-                <li class="px-6">
+            <ul class="flex flex-wrap justify-center">
+                <li class="py-6 px-6">
                     <a href="">About us</a>
                 </li>                
-                <li class="px-6">
+                <li class="py-6 px-6">
                     <a href="">FAQ</a>
                 </li>  
-                <li class="px-6">
+                <li class="py-6 px-6">
                     <a href="">Support</a>
                 </li>                                
-                <li class="px-6">
+                <li class="py-6 px-6">
                     <a href="">Legal</a>
                 </li>
-                <li class="px-6">
+                <li class="py-6 px-6">
                     <a href="">Privacy</a>
                 </li>                  
-                <li class="px-6">
+                <li class="py-6 px-6">
                     <a href="">Terms</a>
                 </li>                
             </ul>
