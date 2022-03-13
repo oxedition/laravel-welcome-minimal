@@ -24,102 +24,34 @@
         </style>
     </head>
     <body class=" bg-blue-100">
-        
+
+        {{-- header --}}
         <x-ox.header.header/>
-        <hr>
-    {{-- start block.introduction --}}
-    <x-ox.block.introduction>
-        
-        {{-- title --}}
-        <x-slot:title class="my-6 strong">
-           title with nothing but with button max
-        </x-slot>
-        {{-- start slot --}}
-        <p class="mb-6">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        </p>
-        <x-ox.button.button class="my-4 md:my-6 uppercase">
-            button
-        </x-ox.button.button>
-        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
-            button text
-        </x-ox.button.button-text>
-        <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
-            button primary
-        </x-ox.button.button-primary>   
-        <x-ox.button.button-secondary class="my-4 md:my-6 uppercase">
-            button secondary
-        </x-ox.button.button-secondary>        
-        {{-- end slot --}}        
+        {{-- header --}}
 
-    </x-ox.block.introduction>
-    {{-- end block.introduction --}}
-    <hr>       
-    {{-- start block.introduction --}}
-    <x-ox.block.introduction>
-        
-        {{-- title --}}
-        <x-slot:title class="my-6 strong">
-           title with paysage image
-        </x-slot>
-        
-        {{-- image --}}
-        <x-slot:image class="border border-8 border-blue-200">
-            /images/deon-black-M5p7exr1gUg-unsplash-2.jpg
-        </x-slot:image>
+        {{-- start block.introduction --}}
+        <x-ox.block.introduction>
+            
+            {{-- title --}}
+            <x-slot:title class="my-6 strong">
+            Introduction block without image <br>on a single column
+            </x-slot>
+            {{-- start slot --}}
+            <p class="mb-6">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+            <x-ox.button.button class="my-4 mr-4 md:my-6 uppercase">
+                Create an account
+            </x-ox.button.button>
+            <x-ox.button.button-text class="my-4 md:my-6 uppercase">
+                Learn more
+            </x-ox.button.button-text>
+            {{-- end slot --}}        
 
-        {{-- start slot --}}
-        <p class="mb-6">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        </p>
-        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
-            button
-        </x-ox.button.button>
-        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
-            button text
-        </x-ox.button.button-text>
-        <x-ox.button.button-primary class="my-4 md:my-6 uppercase">
-            button primary
-        </x-ox.button.button-primary>   
-        <x-ox.button.button-secondary class="my-4 md:my-6 uppercase">
-            button secondary
-        </x-ox.button.button-secondary>        
-        {{-- end slot --}}        
+        </x-ox.block.introduction>
+        {{-- end block.introduction --}}
 
-    </x-ox.block.introduction>
-    {{-- end block.introduction --}}
-
-    <hr>
-
-    {{-- start block.introduction --}}
-    <x-ox.block.introduction>
-        
-        {{-- title --}}
-        <x-slot:title class="my-6 strong">
-           title with paysage image
-        </x-slot>
-        
-        {{-- image --}}
-        <x-slot:image class="border border-8 border-blue-200">
-            /images/deon-black-M5p7exr1gUg-unsplash-2.jpg
-        </x-slot:image>
-
-        {{-- start slot --}}
-        <p class="mb-6">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-        </p>
-        <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
-            button
-        </x-ox.button.button>
-        <x-ox.button.button-text class="my-4 md:my-6 uppercase">
-            button text
-        </x-ox.button.button-text>      
-        {{-- end slot --}}        
-
-    </x-ox.block.introduction>
-    {{-- end block.introduction --}}
-    <hr>
-
+    <hr class="border-b-black border">
     {{-- start block.introduction --}}
     <x-ox.block.introduction>
         
@@ -130,7 +62,7 @@
         
         {{-- image --}}
         <x-slot:image class="border border-8 border-blue-200">
-            /images/brian-kyed-P7EFJs577Xg-unsplash.jpg
+            https://unsplash.com/photos/GMSqa8vdx84/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQ3MTg3MjEy&force=false&w=640
         </x-slot:image>
 
         {{-- start slot --}}
@@ -138,28 +70,29 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
-            button
+            Discover
         </x-ox.button.button>
         <x-ox.button.button-text class="my-4 md:my-6 uppercase">
-            button text
+            Learn more
         </x-ox.button.button-text>
         {{-- end slot --}}        
 
     </x-ox.block.introduction>
     {{-- end block.introduction --}}
-    <hr>    
+
+    <hr class="border-b-black border">
 
     {{-- start block.introduction --}}
-    <x-ox.block.introduction>
+    <x-ox.block.introduction invert="true">
         
         {{-- title --}}
         <x-slot:title class="my-6 strong">
-           title with square image
+           title with paysage image in first position
         </x-slot>
         
         {{-- image --}}
         <x-slot:image class="border border-8 border-blue-200">
-            /images/alvan-nee-iW8WH1Z5bFA-unsplash.jpg
+            https://unsplash.com/photos/GMSqa8vdx84/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjQ3MTg3MjEy&force=false&w=640
         </x-slot:image>
 
         {{-- start slot --}}
@@ -167,15 +100,17 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
         </p>
         <x-ox.button.button class="my-4 md:my-6 uppercase mr-6">
-            button
+            Signup
         </x-ox.button.button>
         <x-ox.button.button-text class="my-4 md:my-6 uppercase">
-            button text
-        </x-ox.button.button-text>   
+            Documentation
+        </x-ox.button.button-text>      
+        {{-- end slot --}}        
 
     </x-ox.block.introduction>
     {{-- end block.introduction --}}
-    <hr>    
+
+    <hr class="border-b-black border"> 
 
     <x-ox.block.argumentation>
         <x-slot:image>

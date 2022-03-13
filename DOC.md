@@ -70,6 +70,32 @@ Please see config/minimal.php inside your application.
 
 ## Block intruction
 
+LE bloc introduction permet à vos futurs clients de conprendre le concept de votre logiciel d'un coup d'oeil. Vous pouvez l'inviterà s'inscrire ou à consulter de plus ample information. 
+
+### introduction single column
+
+```blade
+<x-ox.block.introduction>
+    
+    {{-- title --}}
+    <x-slot:title class="my-6 strong">
+    Introduction block without image <br>on a single column
+    </x-slot>
+    {{-- start slot --}}
+    <p class="mb-6">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+    </p>
+    <x-ox.button.button class="my-4 mr-4 md:my-6 uppercase">
+        Create an account
+    </x-ox.button.button>
+    <x-ox.button.button-text class="my-4 md:my-6 uppercase">
+        Learn more
+    </x-ox.button.button-text>
+    {{-- end slot --}}        
+
+</x-ox.block.introduction>
+```
+
 ## Block testimonial
 
 ## Block argumentation

@@ -1,6 +1,8 @@
 <header {{ $attributes->merge(['class' => 'w-full flex items-center py-6 px-6 mb-4 shadow-xl bg-blue-100']) }}>
     <div class="w-1/4 flex-1">
-     <a href="/" class="text-sm lg:text-2xl">LOGOTYPE</a>
+        <a href="/" class="text-sm lg:text-2xl">
+            <x-jet-application-logo/>
+        </a>
     </div>
     <nav class="w-3/4 flex justify-end items-center uppercase text-sm">
      <ul class="flex items-center">
