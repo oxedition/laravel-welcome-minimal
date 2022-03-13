@@ -1,4 +1,4 @@
-# CHANGE COLOR
+# Change color interface
 
 During development or after installing Laravel Welcome Minimal, if you want to change the interface color, you need to run.
 
@@ -7,7 +7,7 @@ php artisan minimal:color
 ```
 The [color listing](https://tailwindcss.com/docs/customizing-colors) comes from the [tainwindcss.com](https://tailwindcss.com) color palette.
 
-# HEADER
+# Header
 
 You can put header with fix position. But you need to add some padding to body tag.
 
@@ -15,7 +15,7 @@ You can put header with fix position. But you need to add some padding to body t
 <x-ox.header.header class="fixed" />
 ```
 
-# FOOTER
+# Footer
 
 Footer without social networks en sub menu. 
 
@@ -53,7 +53,7 @@ Supported social networks link are as follows
 
 Please see config/minimal.php inside your application folder.
 
-# COMPONENTS
+# Components
 
 ## Accordion
 
@@ -85,7 +85,7 @@ Please see config/minimal.php inside your application folder.
 
 ## Columns
 
-# BLOCKS
+# Blocks
 
 ## Intruction block
 
