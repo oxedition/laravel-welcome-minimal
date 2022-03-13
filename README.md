@@ -1,6 +1,6 @@
 # Laravel welcome minimal template
 
-Laravel welcome minimal is a replacement template for Laravel welcome page. test
+Laravel welcome minimal is a replacement template for Laravel Welcome Page and Page for your saas app (about, faqs, support, terms and privacy pages)
 
 ## Installation
 
@@ -12,7 +12,9 @@ composer require oxedition/laravel-welcome-minimal
 
 ## Usage
 
-This package required Laravel Jetstream Livewire. **Not working with Laravel Breeze or Laravel Jetstream Inertiajs**
+This package required Laravel Jetstream Livewire. 
+
+**This package not working with Laravel Breeze or Laravel Jetstream Inertiajs**
 
 ```php
 php artisan minimal:install
