@@ -1,0 +1,1 @@
+<img src="{{ $slot }}" {{ $attributes->merge(['class' => 'border border-8 border-blue-200 rounded-full']) }}>

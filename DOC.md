@@ -36,6 +36,45 @@ If you want to add menu zone.
 
 Please see config/minimal.php inside your application.
 
+# COMPONENTS
+
+## Accordion
+
+```blade
+<x-ox.accordion>
+    <x-slot:title>
+        the first question is here ?
+    </x-slot:title>
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</x-ox.accordion>   
+<x-ox.accordion>
+    <x-slot:title>
+        the second in this place !
+    </x-slot:title>
+    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+</x-ox.accordion>   
+```
+
+## Button
+
+4 styles of button exists for this template.
+
+* primary
+* secondary
+* text
+* black
+
+## Columns
+
+# BLOCKS
+
+## Block intruction
+
+## Block testimonial
+
+## Block argumentation
+
+## Block price
 
 # ICONS
 
