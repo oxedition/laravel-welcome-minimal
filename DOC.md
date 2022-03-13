@@ -1,12 +1,11 @@
 # CHANGE COLOR
 
-If you want to change the color. 
+During development or after installing Laravel Welcome Minimal, if you want to change the interface color, you need to run.
 
 ```php
 php artisan minimal:color
 ```
-
-You can refer to the [color listing](https://tailwindcss.com/docs/customizing-colors) of [tainwindcss.com](https://tailwindcss.com)
+The [color listing](https://tailwindcss.com/docs/customizing-colors) comes from the [tainwindcss.com](https://tailwindcss.com) color palette.
 
 # HEADER
 
@@ -34,13 +33,33 @@ If you want to add menu zone.
 </x-ox-footer.footer>    
 ```
 
-Please see config/minimal.php inside your application.
+If you want to add social network link zone. 
+
+```html
+<x-ox.footer.footer :network="config('minimal.network')">
+    Copyright © {{ config('app.name', 'Laravel') }} - all rigths reserved for <a href="https://laravel.com" class="underline">{{ config('app.name', 'Laravel') }}</a>
+</x-ox-footer.footer>  
+```
+
+You can combine both variable to have a footer with menu and social network.
+
+Supported social networks link are as follows
+- facebook
+- twitter
+- instagram
+- linkedin
+- youtube
+- github
+
+Please see config/minimal.php inside your application folder.
 
 # COMPONENTS
 
 ## Accordion
 
-```blade
+<img src="/art/component-accordion.gif">
+
+```html
 <x-ox.accordion>
     <x-slot:title>
         the first question is here ?
@@ -78,7 +97,7 @@ You can transform the "introduction block" into three different variants
 
 <img src="/art/block-introduction-single-column-mobile.png" alt="Block introduction with a single column mobile version" width="250">
 
-```blade
+```html
 <x-ox.block.introduction>
     
     {{-- title --}}
@@ -110,7 +129,7 @@ You can transform the "introduction block" into three different variants
 
 You can see the icon pack here [https://feathericons.com](https://feathericons.com) 
 
-```blade
+```html
 <x-feathericon-alert-triangle/>
 ```
 

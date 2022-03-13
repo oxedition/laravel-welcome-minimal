@@ -10,6 +10,5 @@
     </div>
     <div x-show="show" class="px-8 py-2 pt-4" x-transition>
         {{ $slot }}
-        <hr class="pb-0">
     </div>
 </div>
