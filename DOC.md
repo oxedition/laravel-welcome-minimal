@@ -76,7 +76,7 @@ LE bloc introduction permet à vos futurs clients de conprendre le concept de vo
 
 <img src="/art/block-introduction-single-column-desktop.png" alt="block introduction with a single column of text desktop version">
 
-<img src="/art/block-introduction-single-column-mobile.png" alt="Block introduction with a single column mobile version" width="250>
+<img src="/art/block-introduction-single-column-mobile.png" alt="Block introduction with a single column mobile version" width="250">
 
 ```blade
 <x-ox.block.introduction>
