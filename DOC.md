@@ -57,7 +57,9 @@ Please see config/minimal.php inside your application folder.
 
 ## Accordion
 
-<img src="/art/component-accordion.gif" width="50%">
+<center>
+<img src="/art/component-accordion.gif" width="75%">
+</center>
 
 ```html
 <x-ox.accordion>
