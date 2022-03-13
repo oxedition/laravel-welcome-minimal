@@ -68,11 +68,11 @@ Please see config/minimal.php inside your application.
 
 # BLOCKS
 
-## Block intruction
+## Intruction block
 
-LE bloc introduction permet à vos futurs clients de conprendre le concept de votre logiciel d'un coup d'oeil. Vous pouvez l'inviterà s'inscrire ou à consulter de plus ample information. 
+You can transform the "introduction block" into three different variants 
 
-### introduction single column
+### Introduction block with a single column of text
 
 <img src="/art/block-introduction-single-column-desktop.png" alt="block introduction with a single column of text desktop version">
 
